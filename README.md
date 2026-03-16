@@ -1,17 +1,18 @@
-# Multi-cluster-Gitops
+# Architecture
 Multi Cluster Deployment with GitOps using ArgoCD
 
 
 Developer
    │
    ▼
-Git Repository
+Git Repository (GitOps Source of Truth)
    │
    ▼
-ArgoCD
+ArgoCD Controller
    │
- ┌─┴───────────┐
- │             │
-Cluster-1   Cluster-2
- │             │
-Application   Application
+   ├───────────────┐
+   │               │
+   ▼               ▼
+EKS Cluster-1   EKS Cluster-2
+   │               │
+Application     Application
