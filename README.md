@@ -2,6 +2,7 @@
 Multi Cluster Deployment with GitOps using ArgoCD
 
 
+```text
 Developer
    │
    ▼
@@ -13,6 +14,7 @@ ArgoCD Controller
    ├───────────────┐
    │               │
    ▼               ▼
-EKS Cluster-1   EKS Cluster-2
+Cluster-1       Cluster-2
    │               │
 Application     Application
+```
